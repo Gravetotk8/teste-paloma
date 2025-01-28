@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.activity-group {
+    margin-top: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#custom-activity {
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    width: 200px;
+    margin: 0 auto;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vigilâncias</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Seleção de Vigilância</h1>
+        <div class="mb-3">
+            <label for="vigilancia" class="form-label">Selecione a Vigilância:</label>
+            <select id="vigilancia" onchange="updateActivities()" class="form-select" data-bs-toggle="tooltip"
+                title="Selecione uma vigilância para listar as atividades correspondentes">
+                <option value="">-- Selecione --</option>
+                <option value="VAN">VAN</option>
+                <option value="CRIS">CRIS</option>
+                <option value="VIGEP">VIGEP</option>
+                <option value="VISA">VISA</option>
+                <option value="CEREST">CEREST</option>
+                <option value="ZOONOSE">ZOONOSE</option>
+                <option value="VISAM">VISAM</option>
+            </select>
+        </div>
+        <div id="activities-container" class="activity-group"></div>
+        <div id="custom-activity" class="hidden">
+            <label for="other-activity" class="form-label">Outra atividade realizada (especifique):</label>
+            <textarea id="other-activity" placeholder="Digite aqui..." class="form-control"></textarea>
+        </div>
+        <div class="d-grid gap-2">
+            <button class="btn btn-primary" type="button">Enviar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qj3BYF6qB9A3ZlK+9p2jlJ9tWcRfa3E5kXsdmXKl5wGXVzFqUrWNYZzMdE+amyp"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
